@@ -1,0 +1,44 @@
+
+#root {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    padding: 1em;
+}
+
+.container * {
+    width: auto;
+    font-size: 1.2rem;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.cta {
+    background-color: darkgreen;
+    padding: 1rem;
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+}
