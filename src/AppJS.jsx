@@ -63,13 +63,13 @@ export const useClosestMedia = () => {
 
 function App() {
     const closest = useClosestMedia();
-    const query = useMediaQuery('lg');
-  return (
-      <div className="container">
-          <div>Closest Media: {closest}</div>
-          <div>Is screen large? {query ? 'Yes' : 'No'}</div>
-      </div>
-  )
+    const sm = useMediaQuery('sm');
+    return (
+        <div className="container flex-col text-white gap-4">
+            <div className="bg-neutral-900 p-4 rounded">Closest Media: {closest}</div>
+            <div className="bg-neutral-900 p-4 rounded">{sm ? 'Hi desktop user!' : 'Hi mobile user!'}</div>
+        </div>
+    )
 }
 
 export default App
