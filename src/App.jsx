@@ -1,6 +1,5 @@
-import {useEffect, useState} from 'react'
-import './App.css'
-
+import { useEffect, useState } from 'react';
+import './App.css';
 
 export const sizes = {
     sm: '640px',
@@ -60,20 +59,24 @@ export const useClosestMedia = () => {
     return closest;
 };
 
-
 function App() {
     const closest = useClosestMedia();
     const query = useMediaQuery('lg');
-  return (
-      <div className="container">
-            <img src="plate-3.webp"/>
+    return (
+        <div className="container">
+            <div className="plate-container">
+                <img className="plate" src="plate-3.webp" />
+            </div>
             <div className="text-container">
                 <h1 className="title">Vegetarian Food, No Compromise!</h1>
-                <div>Delicious meat-free meals, with flavour to spare. Inspired by Carribean cuisine, and bursting with flavour!</div>
+                <div>
+                    Delicious meat-free meals, with flavour to spare. Inspired
+                    by Carribean cuisine, and bursting with flavour!
+                </div>
                 <button className="cta">Order Now</button>
             </div>
-      </div>
-  )
+        </div>
+    );
 }
 
-export default App
+export default App;
